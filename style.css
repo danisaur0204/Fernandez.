@@ -818,7 +818,6 @@ article p{
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     text-align: center;
 }
 
@@ -852,7 +851,7 @@ aside img {
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding-top: 10%;
     text-align: center;
     margin: 20px 0; 
 }
