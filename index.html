@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Index Page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <div class="header-right">
-                <div class="user-info">
-                    <a href="login.html"><img src="avatar.jpeg" alt="User Avatar"></a>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-right">
+            <div class="user-info">
+                <a href="login.html"><img src="avatar.jpeg" alt="User Avatar"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="my-container">
+            <aside>
+                <img src="logo2.png" alt="Company Logo">
+            </aside>
+            <div class="index-container">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-button">Search</button>
                 </div>
             </div>
-        </header>
-        <main>
-            <div class="my-container">
-                <aside>
-                    <img src="logo2.png" alt="Company Logo">
-                </aside>
-                <div class="index-container">
-                    <div class="search-bar">
-                        <input type="text" id="search-input" placeholder="Search...">
-                        <button id="search-button">Search</button>
-                    </div>
-                </div>
-                <nav>
-                    <ul>
-                        <br>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="product.html">Products</a></li>
-                        <li><a href="contactus.html">Contact Us</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </main>
-        <footer>
-            <center>
-                <hr>
-                <p>&copy; 2024 MK PH. All rights reserved.</p>
-                <br>
-            </center>
-        </footer>
-        <script>
-            document.getElementById("search-button").addEventListener("click", function() {
-                var searchQuery = document.getElementById("search-input").value.toLowerCase();
-                switch (searchQuery) {
-                    case "home":
-                        window.location.href = "home.html";
-                        break;
-                    case "products":
-                        window.location.href = "product.html";
-                        break;
-                    case "about us":
-                        window.location.href = "aboutus.html";
-                        break;
-                    case "contact us":
-                        window.location.href = "contactus.html";
-                        break;
-                    default:
-                        alert("No matching page found for the search query.");
-                }
-            });
-        </script>
-    </body>
+            <nav>
+                <ul>
+                    <br>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <hr>
+            <p>&copy; 2024 MK PH. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("search-button").addEventListener("click", function() {
+            var searchQuery = document.getElementById("search-input").value.toLowerCase();
+            switch (searchQuery) {
+                case "home":
+                    window.location.href = "home.html";
+                    break;
+                case "products":
+                    window.location.href = "product.html";
+                    break;
+                case "about us":
+                    window.location.href = "aboutus.html";
+                    break;
+                case "contact us":
+                    window.location.href = "contactus.html";
+                    break;
+                default:
+                    alert("No matching page found for the search query.");
+            }
+        });
+    </script>
+</body>
 </html>
